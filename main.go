@@ -21,7 +21,7 @@ func main() {
 
 	client := switchbot.NewClient(token)
 
-	http.HandleFunc("/metrics", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/probe", func(w http.ResponseWriter, r *http.Request) {
 
 		deviceID := r.FormValue("target")
 
